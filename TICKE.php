@@ -5,7 +5,7 @@ define('EURO',chr(128)); // Constante con el símbolo Euro.
 $pdf = new FPDF('P','mm',array(76,60)); // Tamaño tickt 80mm x 150 mm (largo aprox)
 $pdf->AddPage();
 
-$conexion = mysqli_connect("localhost", "root", "", "anei") or die("Problemas con la conexión");
+$conexion = mysqli_connect("bqztnuddpckcckx4f7fx-mysql.services.clever-cloud.com", "uck36gwmenqhsuau", "VvekENXHAb8qpfRNMX6d", "bqztnuddpckcckx4f7fx") or die("Problemas con la conexión");
 $resultado = mysqli_query($conexion," SELECT  *FROM asociados where nombre_usuario= '$_SESSION[nombre]'");
 if($consulta = mysqli_fetch_array($resultado))
 { 

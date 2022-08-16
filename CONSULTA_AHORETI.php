@@ -36,7 +36,7 @@
 
         <tbody>
          <?php
-           $conexion = mysqli_connect("bqztnuddpckcckx4f7fx-mysql.services.clever-cloud.com", "uck36gwmenqhsuau", "uck36gwmenqhsuau", "bqztnuddpckcckx4f7fx") or die("Problemas con la conexión");
+           $conexion = mysqli_connect("bqztnuddpckcckx4f7fx-mysql.services.clever-cloud.com", "uck36gwmenqhsuau", "VvekENXHAb8qpfRNMX6d", "bqztnuddpckcckx4f7fx") or die("Problemas con la conexión");
 		    $resul = mysqli_query($conexion,"select nombre_ahorro, cedula_ahorro, sum(valor_ahorro) as total from ahorro group by (cedula_ahorro)");
 		    while($consul = mysqli_fetch_array($resul))
 		    { $resultado = mysqli_query($conexion,"select sum(valor_retiro) as total2 from retiro where cedula_retiro=$consul[cedula_ahorro] ");

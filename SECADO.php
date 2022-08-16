@@ -27,7 +27,7 @@
                         <input type="text" class="form-control" id="cuadro_buscar" onkeyup="mi_busqueda();" list="listanavegadores" placeholder="Buscar...">
                         <datalist id="listanavegadores">
                         <?php
-                            $conexion = mysqli_connect("localhost", "root", "", "anei") or die("Problemas con la conexión");
+                            $conexion = mysqli_connect("bqztnuddpckcckx4f7fx-mysql.services.clever-cloud.com", "uck36gwmenqhsuau", "VvekENXHAb8qpfRNMX6d", "bqztnuddpckcckx4f7fx") or die("Problemas con la conexión");
 
                             $registros = mysqli_query($conexion, "select  *from asociados") or die("Problemas en el select:" . mysqli_error($conexion));
                             while ($reg = mysqli_fetch_array($registros)) 
