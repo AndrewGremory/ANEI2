@@ -29,7 +29,7 @@
     <input type="text" id="cuadro_buscar" class="form-control" onkeypress="mi_busqueda();" list="listanavegadores" placeholder="Buscar cedula..."> 
         <datalist id="listanavegadores">
         <?php
-      $conexion = mysqli_connect("bqztnuddpckcckx4f7fx-mysql.services.clever-cloud.com", "uck36gwmenqhsuau", "uck36gwmenqhsuau", "bqztnuddpckcckx4f7fx") or die("Problemas con la conexión");
+      $conexion = mysqli_connect("bqztnuddpckcckx4f7fx-mysql.services.clever-cloud.com", "uck36gwmenqhsuau", "VvekENXHAb8qpfRNMX6d", "bqztnuddpckcckx4f7fx") or die("Problemas con la conexión");
 
       $registros = mysqli_query($conexion, "select  *from asociados") or die("Problemas en el select:" . mysqli_error($conexion));
       while ($reg = mysqli_fetch_array($registros)) {?>

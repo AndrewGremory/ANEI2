@@ -29,7 +29,7 @@
                          <input type="text" id="cuadro_buscar" class="form-control" class="form-control" onkeyup="mi_busqueda();" list="listanavegadores" placeholder="Buscar...">
                         <datalist id="listanavegadores">
                         <?php
-                            $conexion = mysqli_connect("bqztnuddpckcckx4f7fx-mysql.services.clever-cloud.com", "uck36gwmenqhsuau", "uck36gwmenqhsuau", "bqztnuddpckcckx4f7fx");
+                            $conexion = mysqli_connect("bqztnuddpckcckx4f7fx-mysql.services.clever-cloud.com", "uck36gwmenqhsuau", "VvekENXHAb8qpfRNMX6d", "bqztnuddpckcckx4f7fx");
 
                             $regi = mysqli_query($conexion, "select  *from asociados join compra on cedula=cedula_usuario") or die("Problemas en el select:" . mysqli_error($conexion));
                             while ($consu = mysqli_fetch_array($regi)) 
